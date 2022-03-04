@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ApAkei">
         <activity
+            android:name=".locations.VehicleDetailsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".locations.VehicleListActivity"
+            android:exported="true" />
+        <activity
+            android:name=".locations.LocationListActivity"
+            android:exported="true" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
