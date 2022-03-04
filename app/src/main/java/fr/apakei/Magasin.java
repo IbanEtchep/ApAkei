@@ -10,6 +10,8 @@ public class Magasin {
     private ArrayList<Employe> lesEmployes;
     private ArrayList<Vehicule> lesVehicules;
 
+
+
     public Magasin(String nom, String adresse, String cp, String ville){
         this.nom=nom;
         this.adresse=adresse;
