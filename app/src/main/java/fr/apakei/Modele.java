@@ -36,13 +36,14 @@ public class Modele {
 
     public static void init(){
         int num=Modele.addRayon("Tables","Tables de cuisine, tables basses...");
-        Modele.getLeRayon(num).addProduit(new Produit("Fjallbo","Table basse, noire",69.95f,5.0f,152f,75f,95f));
+        Modele.getLeRayon(num).addProduit(new Produit("Fjallbo","Table basse, noire",69.95,5.0,152,75,95));
         Employe employeUn=new Employe("Jean","Baptiste","0612345678","jean.baptiste@gmail.com");
         Modele.getLeRayon(num).addEmploye(employeUn);
 
+
         int numm=Modele.addMagasin("Akei Pays basque", "2-4 Av. du Portou", "64990", "Saint-Pierre-d'Irube");
         Modele.getLeMagasin(numm).addEmploye(employeUn);
-        Modele.getLeMagasin(numm).addVehicule(new Vehicule("Ducato", 2670f,1870f,1662f,"AF-512-FM", "Essence",32000f,20f,"Fiat"));
+        Modele.getLeMagasin(numm).addVehicule(new Vehicule("Ducato", 2670,1870,1662,"AF-512-FM", "Essence",32000,20,"Fiat"));
     }
 
 }

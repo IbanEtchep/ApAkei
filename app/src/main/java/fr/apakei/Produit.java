@@ -5,14 +5,14 @@ import java.util.ArrayList;
 public class Produit {
     private String nom;
     private String descTech;
-    private float prix;
-    private float poids;
-    private float longueur;
-    private float hauteur;
-    private float largeur;
+    private double prix;
+    private double poids;
+    private double longueur;
+    private double hauteur;
+    private double largeur;
     private String leRayon;
 
-    public Produit(String nom, String descTech, float prix, float poids, float longueur, float hauteur, float largeur){
+    public Produit(String nom, String descTech, double prix, double poids, double longueur, double hauteur, double largeur){
         this.nom=nom;
         this.descTech=descTech;
         this.prix=prix;
@@ -39,43 +39,43 @@ public class Produit {
         this.descTech = descTech;
     }
 
-    public float getPrix() {
+    public double getPrix() {
         return prix;
     }
 
-    public void setPrix(float prix) {
+    public void setPrix(double prix) {
         this.prix = prix;
     }
 
-    public float getPoids() {
+    public double getPoids() {
         return poids;
     }
 
-    public void setPoids(float poids) {
+    public void setPoids(double poids) {
         this.poids = poids;
     }
 
-    public float getLongueur() {
+    public double getLongueur() {
         return longueur;
     }
 
-    public void setLongueur(float longueur) {
+    public void setLongueur(double longueur) {
         this.longueur = longueur;
     }
 
-    public float getHauteur() {
+    public double getHauteur() {
         return hauteur;
     }
 
-    public void setHauteur(float hauteur) {
+    public void setHauteur(double hauteur) {
         this.hauteur = hauteur;
     }
 
-    public float getLargeur() {
+    public double getLargeur() {
         return largeur;
     }
 
-    public void setLargeur(float largeur) {
+    public void setLargeur(double largeur) {
         this.largeur = largeur;
     }
 

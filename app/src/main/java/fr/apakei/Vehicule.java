@@ -4,17 +4,17 @@ import java.util.ArrayList;
 
 public class Vehicule {
     private String nom;
-    private float longueur;
-    private float largeur;
-    private float hauteur;
+    private double longueur;
+    private double largeur;
+    private double hauteur;
     private String plaqueImma;
     private String typeCarburant;
-    private float nbKmActuel;
-    private float volume;
+    private double nbKmActuel;
+    private double volume;
     private String marque;
     private String leMagasin;
 
-    public Vehicule(String nom, float longueur,float largeur,float hauteur,String plaqueImma,String typeCarburant,float nbKmActuel,float volume,String marque){
+    public Vehicule(String nom, double longueur,double largeur,double hauteur,String plaqueImma,String typeCarburant,double nbKmActuel,double volume,String marque){
         this.nom=nom;
         this.longueur=longueur;
         this.largeur=largeur;
@@ -34,27 +34,27 @@ public class Vehicule {
         this.nom = nom;
     }
 
-    public float getLongueur() {
+    public double getLongueur() {
         return longueur;
     }
 
-    public void setLongueur(float longueur) {
+    public void setLongueur(double longueur) {
         this.longueur = longueur;
     }
 
-    public float getLargeur() {
+    public double getLargeur() {
         return largeur;
     }
 
-    public void setLargeur(float largeur) {
+    public void setLargeur(double largeur) {
         this.largeur = largeur;
     }
 
-    public float getHauteur() {
+    public double getHauteur() {
         return hauteur;
     }
 
-    public void setHauteur(float hauteur) {
+    public void setHauteur(double hauteur) {
         this.hauteur = hauteur;
     }
 
@@ -74,19 +74,19 @@ public class Vehicule {
         this.typeCarburant = typeCarburant;
     }
 
-    public float getNbKmActuel() {
+    public double getNbKmActuel() {
         return nbKmActuel;
     }
 
-    public void setNbKmActuel(float nbKmActuel) {
+    public void setNbKmActuel(double nbKmActuel) {
         this.nbKmActuel = nbKmActuel;
     }
 
-    public float getVolume() {
+    public double getVolume() {
         return volume;
     }
 
-    public void setVolume(float volume) {
+    public void setVolume(double volume) {
         this.volume = volume;
     }
 
