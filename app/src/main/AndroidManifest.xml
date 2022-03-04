@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ApAkei">
         <activity
+            android:name=".produits.CaractProduitActivity"
+            android:exported="true" />
+        <activity
+            android:name=".produits.ProduitsRayonActivity"
+            android:exported="true" />
+        <activity
+            android:name=".produits.ListRayonsActivity"
+            android:exported="true" />
+        <activity
             android:name=".locations.VehicleDetailsActivity"
             android:exported="true" />
         <activity
