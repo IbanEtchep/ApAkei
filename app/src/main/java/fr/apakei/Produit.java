@@ -10,9 +10,10 @@ public class Produit {
     private double longueur;
     private double hauteur;
     private double largeur;
+    private String couleur;
     private String leRayon;
 
-    public Produit(String nom, String descTech, double prix, double poids, double longueur, double hauteur, double largeur){
+    public Produit(String nom, String descTech, double prix, double poids, double longueur, double hauteur, double largeur, String couleur){
         this.nom=nom;
         this.descTech=descTech;
         this.prix=prix;
@@ -20,7 +21,7 @@ public class Produit {
         this.longueur=longueur;
         this.hauteur=hauteur;
         this.largeur=largeur;
-
+        this.couleur=couleur;
     }
 
     public String getNom() {
@@ -85,5 +86,13 @@ public class Produit {
 
     public void setLeRayon(String leRayon) {
         this.leRayon = leRayon;
+    }
+
+    public String getCouleur() {
+        return couleur;
+    }
+
+    public void setCouleur(String couleur) {
+        this.couleur = couleur;
     }
 }
