@@ -20,7 +20,7 @@ public class ListRayonsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list_rayons);
 
-        ListView lv_listP = (ListView)findViewById(R.id.lv_rayons);
+        ListView lv_listP = (ListView)findViewById(R.id.lv_employe);
         List<Rayon> lesRayons= Modele.getLesRayons();
         List<String> s_lesRayons=new ArrayList<>();
 
