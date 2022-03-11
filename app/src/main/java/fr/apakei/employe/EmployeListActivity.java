@@ -28,7 +28,7 @@ public class EmployeListActivity extends AppCompatActivity {
         int position= (int) bundleRecu.getFloat("position");
         List<String> lesEmployees=new ArrayList<>();
         for (int i=0;i< Modele.getLeRayon(position).getLesEmployes().size();i++){
-            lesEmployees.add(Modele.getLeRayon(position).getEmploye(i).getNom());
+            lesEmployees.add(Modele.getLeRayon(position).getEmploye(i).getNom()+" "+Modele.getLeRayon(position).getEmploye(i).getPrenom());
         }
         ArrayAdapter<String> lv_adapter = new ArrayAdapter<String>(this, R.layout.lv_rayons_element, lesEmployees);
         lv_list.setAdapter(lv_adapter);
