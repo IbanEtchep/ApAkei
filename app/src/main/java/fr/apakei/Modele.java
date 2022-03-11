@@ -2,7 +2,7 @@ package fr.apakei;
 
 import java.util.ArrayList;
 
-public class Modele {
+public class    Modele {
     private static ArrayList<Rayon> lesRayons = new ArrayList<Rayon>();
     private static ArrayList<Magasin> lesMagasins = new ArrayList<Magasin>();
 
