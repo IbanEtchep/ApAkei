@@ -40,7 +40,6 @@ public class RayonMagasinActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> adapter, View view, int position, long id) {
                 String value = (String)adapter.getItemAtPosition(position);
-                Log.d("position", value+position);
                 Intent intent= new Intent(getApplicationContext(),EmployeListActivity.class);
                 Bundle bundleATransmettre = new Bundle();
                 bundleATransmettre.putFloat("position",position);

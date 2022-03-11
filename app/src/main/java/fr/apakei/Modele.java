@@ -44,6 +44,8 @@ public class    Modele {
         Modele.getLeRayon(num2).addProduit(new Produit("Luminaire 3d","Luminaire3D stylée",60.99,2.0,100,15,50, "blanc"));
         Employe employe=new Employe("Dupont","Dupont","0678451296","dupont.dupont@gmail.com");
         Modele.getLeRayon(num2).addEmploye(employe);
+        Employe employe2=new Employe("Eric","Ramzi","0677245296","eric.ramzi@gmail.com");
+        Modele.getLeRayon(num2).addEmploye(employe2);
 
 
         int numm=Modele.addMagasin("Akei Pays basque", "2-4 Av. du Portou", "64990", "Saint-Pierre-d'Irube");
