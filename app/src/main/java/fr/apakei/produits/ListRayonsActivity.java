@@ -28,7 +28,7 @@ public class ListRayonsActivity extends AppCompatActivity {
         for (Rayon ray : lesRayons) {
             s_lesRayons.add(ray.getLibelle());
         }
-        ArrayAdapter<String> lv_adapter = new ArrayAdapter<String>(this, R.layout.lv_rayons_element, s_lesRayons);
+        ArrayAdapter<String> lv_adapter = new ArrayAdapter<String>(this, R.layout.lv_rayonmagasin_element, s_lesRayons);
 
 
         lv_listP.setAdapter(lv_adapter);
