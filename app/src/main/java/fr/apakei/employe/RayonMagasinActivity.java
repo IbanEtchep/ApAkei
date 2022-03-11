@@ -42,7 +42,7 @@ public class RayonMagasinActivity extends AppCompatActivity {
                 String value = (String)adapter.getItemAtPosition(position);
                 Intent intent= new Intent(getApplicationContext(),EmployeListActivity.class);
                 Bundle bundleATransmettre = new Bundle();
-                bundleATransmettre.putFloat("position",position);
+                bundleATransmettre.putFloat("positionrayon",position);
                 intent.putExtras(bundleATransmettre);
                 startActivity(intent);
             }
