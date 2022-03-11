@@ -1,9 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".locations.VehicleDetailsActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/tv_nom_vehicule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/nomLabel" />
+
+    <TextView
+        android:id="@+id/tv_marque_vehicule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/marqueLabel" />
+
+    <TextView
+        android:id="@+id/tv_carburant_vehicule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/carburantLabel" />
+
+    <TextView
+        android:id="@+id/tv_kilometrage_vehicule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/kilometrage" />
+
+    <TextView
+        android:id="@+id/tv_immatriculation_vehicule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/immatriculationLabel" />
+
+    <TextView
+        android:id="@+id/tv_longueur_vehicule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/longueurLabel" />
+
+    <TextView
+        android:id="@+id/tv_largeur_vehicule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/largeurLabel" />
+
+    <TextView
+        android:id="@+id/tv_hauteur_vehicule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/hauteurLabel" />
+
+    <TextView
+        android:id="@+id/tv_volume_vehicule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/volumeLabel" />
+
+</LinearLayout>

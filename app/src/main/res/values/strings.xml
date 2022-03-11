@@ -1,4 +1,13 @@
 <resources>
     <string name="app_name">AKEI</string>
     <string name="locations">locations</string>
+    <string name="nomLabel">Nom :</string>
+    <string name="marqueLabel">Marque :</string>
+    <string name="carburantLabel">Carburant :</string>
+    <string name="immatriculationLabel">Immatriculation :</string>
+    <string name="longueurLabel">Longueur :</string>
+    <string name="largeurLabel">Largeur :</string>
+    <string name="hauteurLabel">Hauteur :</string>
+    <string name="volumeLabel">Volume :</string>
+    <string name="kilometrage">Kilometrage :</string>
 </resources>

@@ -15,7 +15,6 @@ import fr.apakei.R;
 public class MagasinAdapter extends BaseAdapter {
 
     private final Context context;
-    private int resourceLayout;
     private List<Magasin> magasins;
 
     public MagasinAdapter(Context context, List<Magasin> magasins) {
@@ -41,7 +40,7 @@ public class MagasinAdapter extends BaseAdapter {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         if (convertView == null) {
-            convertView = LayoutInflater.from(context).inflate(R.layout.magasin_element_layout, parent, false);
+            convertView = LayoutInflater.from(context).inflate(R.layout.magasin_element, parent, false);
         }
 
         Magasin magasin = (Magasin) getItem(position);
