@@ -2,9 +2,12 @@ package fr.apakei.locations;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.Layout;
 import android.view.Display;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.LinearLayout;
 import android.widget.ListView;
@@ -23,9 +26,17 @@ public class LocationListActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_location_list);
+        setTitle("Choisissez un magasin");
 
         ListView listView = (ListView) findViewById(R.id.list_magasins);
-        MagasinAdapter magasinArrayAdapter = new MagasinAdapter(this, Modele.getLesMagasins());
-        listView.setAdapter(magasinArrayAdapter);
+        MagasinAdapter magasinAdapter = new MagasinAdapter(this, Modele.getLesMagasins());
+        listView.setAdapter(magasinAdapter);
+        listView.setOnItemClickListener((adapterView, view, i, l) -> {
+            Intent intent = new Intent(this, VehicleListActivity.class);
+            Bundle bundle = new Bundle();
+            bundle.putInt("magasinIndex", i);
+            intent.putExtras(bundle);
+            startActivity(intent);
+        });
     }
 }
