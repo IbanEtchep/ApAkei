@@ -57,11 +57,11 @@ public class VehicleDetailsActivity extends AppCompatActivity {
         tv_marque.append(vehicule.getMarque());
         tv_immat.append(vehicule.getPlaqueImma());
         tv_carburant.append(vehicule.getTypeCarburant());
-        tv_kilometrage.append(vehicule.getNbKmActuel()+"");
-        tv_longueur.append(vehicule.getLongueur()+"");
-        tv_hauteur.append(vehicule.getHauteur()+"");
-        tv_largeur.append(vehicule.getLargeur()+"");
-        tv_volume.append(vehicule.getVolume()+"");
+        tv_kilometrage.append(vehicule.getNbKmActuel()+" km");
+        tv_longueur.append(vehicule.getLongueur()+" cm");
+        tv_hauteur.append(vehicule.getHauteur()+" cm");
+        tv_largeur.append(vehicule.getLargeur()+" cm");
+        tv_volume.append(vehicule.getVolume()+" m³");
     }
 
     @Override
