@@ -15,6 +15,7 @@ import java.util.List;
 import fr.apakei.Magasin;
 import fr.apakei.Modele;
 import fr.apakei.R;
+import fr.apakei.adapter.MagasinAdapter;
 
 public class LocationListActivity extends AppCompatActivity {
 
@@ -24,13 +25,7 @@ public class LocationListActivity extends AppCompatActivity {
         setContentView(R.layout.activity_location_list);
 
         ListView listView = (ListView) findViewById(R.id.list_magasins);
-        List<Magasin> magasins = Modele.getLesMagasins();
-        List<String> magasinsNames = new ArrayList<>();
-        for (Magasin magasin : magasins) {
-            magasinsNames.add(magasin.getNom());
-        }
-        ArrayAdapter<String> magasinArrayAdapter = new ArrayAdapter<String>(this, R.layout.list_element, magasinsNames);
+        MagasinAdapter magasinArrayAdapter = new MagasinAdapter(this, Modele.getLesMagasins());
         listView.setAdapter(magasinArrayAdapter);
-
     }
 }
