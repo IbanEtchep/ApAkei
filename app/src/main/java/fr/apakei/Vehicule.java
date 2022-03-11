@@ -1,8 +1,7 @@
 package fr.apakei;
 
-import java.util.ArrayList;
-
 public class Vehicule {
+
     private String nom;
     private double longueur;
     private double largeur;
@@ -14,16 +13,16 @@ public class Vehicule {
     private String marque;
     private String leMagasin;
 
-    public Vehicule(String nom, double longueur,double largeur,double hauteur,String plaqueImma,String typeCarburant,double nbKmActuel,double volume,String marque){
-        this.nom=nom;
-        this.longueur=longueur;
-        this.largeur=largeur;
-        this.hauteur=hauteur;
-        this.plaqueImma=plaqueImma;
-        this.typeCarburant=typeCarburant;
-        this.nbKmActuel=nbKmActuel;
-        this.volume=volume;
-        this.marque=marque;
+    public Vehicule(String nom, double longueur, double largeur, double hauteur, String plaqueImma, String typeCarburant, double nbKmActuel, double volume, String marque) {
+        this.nom = nom;
+        this.longueur = longueur;
+        this.largeur = largeur;
+        this.hauteur = hauteur;
+        this.plaqueImma = plaqueImma;
+        this.typeCarburant = typeCarburant;
+        this.nbKmActuel = nbKmActuel;
+        this.volume = volume;
+        this.marque = marque;
     }
 
     public String getNom() {
@@ -104,5 +103,10 @@ public class Vehicule {
 
     public void setLeMagasin(String leMagasin) {
         this.leMagasin = leMagasin;
+    }
+
+    @Override
+    public String toString() {
+        return getMarque() + " " + getNom() + " " + getTypeCarburant();
     }
 }
