@@ -1,7 +1,10 @@
 package fr.apakei.employe;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
@@ -25,13 +28,25 @@ public class EmployeListActivity extends AppCompatActivity {
         setContentView(R.layout.activity_employe_list);
         ListView lv_list = (ListView)findViewById(R.id.lv_employe);
         Bundle bundleRecu = this.getIntent().getExtras();
-        int position= (int) bundleRecu.getFloat("position");
+        int positiona= (int) bundleRecu.getFloat("positionrayon");
         List<String> lesEmployees=new ArrayList<>();
-        for (int i=0;i< Modele.getLeRayon(position).getLesEmployes().size();i++){
-            lesEmployees.add(Modele.getLeRayon(position).getEmploye(i).getNom()+" "+Modele.getLeRayon(position).getEmploye(i).getPrenom());
+        for (int i=0;i< Modele.getLeRayon(positiona).getLesEmployes().size();i++){
+            lesEmployees.add(Modele.getLeRayon(positiona).getEmploye(i).getNom()+" "+Modele.getLeRayon(positiona).getEmploye(i).getPrenom());
         }
         ArrayAdapter<String> lv_adapter = new ArrayAdapter<String>(this, R.layout.lv_rayons_element, lesEmployees);
         lv_list.setAdapter(lv_adapter);
+        lv_list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapter, View view, int position, long id) {
+                String value = (String)adapter.getItemAtPosition(position);
+                Intent intent= new Intent(getApplicationContext(),EmployeDetailActivity.class);
+                Bundle bundleATransmettre = new Bundle();
+                bundleATransmettre.putInt("positionemploye",position);
+                bundleATransmettre.putInt("positionrayon",positiona);
+                intent.putExtras(bundleATransmettre);
+                startActivity(intent);
+            }
+        });
     }
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
