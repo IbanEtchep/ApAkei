@@ -26,7 +26,7 @@ public class EmployeListActivity extends AppCompatActivity {
         actionBar.setDisplayHomeAsUpEnabled(true);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_employe_list);
-        ListView lv_list = (ListView)findViewById(R.id.lv_employe);
+        ListView lv_list = (ListView)findViewById(R.id.lv_rayons);
         Bundle bundleRecu = this.getIntent().getExtras();
         int positiona= (int) bundleRecu.getFloat("positionrayon");
         List<String> lesEmployees=new ArrayList<>();

@@ -2,7 +2,6 @@ package fr.apakei.employe;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
@@ -28,7 +27,7 @@ public class RayonMagasinActivity extends AppCompatActivity {
         actionBar.setDisplayHomeAsUpEnabled(true);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_rayonmagasin);
-        ListView lv_listR = (ListView)findViewById(R.id.lv_employe);
+        ListView lv_listR = (ListView)findViewById(R.id.lv_rayons);
         List<Rayon> lesRayons= Modele.getLesRayons();
         List<String> s_lesRayons=new ArrayList<>();
         for (int i=0;i< lesRayons.size();i++){

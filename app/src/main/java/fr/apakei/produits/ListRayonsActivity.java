@@ -6,16 +6,11 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.ListView;
-
-import java.util.ArrayList;
-import java.util.List;
 
 import fr.apakei.Modele;
 import fr.apakei.R;
 import fr.apakei.Rayon;
-import fr.apakei.adapter.MagasinAdapter;
 import fr.apakei.adapter.RayonAdapter;
 
 public class ListRayonsActivity extends AppCompatActivity {
