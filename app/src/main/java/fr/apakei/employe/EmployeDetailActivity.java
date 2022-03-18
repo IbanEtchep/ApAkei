@@ -1,9 +1,11 @@
 package fr.apakei.employe;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -34,9 +36,18 @@ public class EmployeDetailActivity extends AppCompatActivity {
         prenom=(TextView) findViewById(R.id.tv_prenom);
         tel=(TextView) findViewById(R.id.tv_tel);
         mail=(TextView) findViewById(R.id.tv_mail);
-        nom.setText("Nom : "+Modele.getLeRayon(positionrayon).getEmploye(positionemploye).getNom());
-        prenom.setText("Prenom : "+Modele.getLeRayon(positionrayon).getEmploye(positionemploye).getPrenom());
-        tel.setText("Tel : "+Modele.getLeRayon(positionrayon).getEmploye(positionemploye).getTel());
-        mail.setText("Mail : "+Modele.getLeRayon(positionrayon).getEmploye(positionemploye).getMail());
+        nom.setText(Modele.getLeRayon(positionrayon).getEmploye(positionemploye).getNom());
+        prenom.setText(Modele.getLeRayon(positionrayon).getEmploye(positionemploye).getPrenom());
+        tel.setText(Modele.getLeRayon(positionrayon).getEmploye(positionemploye).getTel());
+        mail.setText(Modele.getLeRayon(positionrayon).getEmploye(positionemploye).getMail());
+    }
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                this.finish();
+                return true;
+        }
+        return super.onOptionsItemSelected(item);
     }
 }

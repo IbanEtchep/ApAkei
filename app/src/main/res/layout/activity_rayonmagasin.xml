@@ -12,7 +12,7 @@
         android:text="Listes des rayons" />
 
     <ListView
-        android:id="@+id/lv_rayons"
+        android:id="@+id/lv_rayonsR"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1" />

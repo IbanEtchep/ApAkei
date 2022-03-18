@@ -14,8 +14,15 @@
         android:text="Liste des rayons"
         android:textSize="20sp" />
 
+    <View
+        android:id="@+id/v_blue2"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="#003DF3"
+        android:paddingBottom="2dp" />
+
     <ListView
-        android:id="@+id/lv_rayons"
+        android:id="@+id/lv_rayonsR"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 </LinearLayout>

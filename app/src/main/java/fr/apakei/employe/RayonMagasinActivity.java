@@ -27,13 +27,13 @@ public class RayonMagasinActivity extends AppCompatActivity {
         actionBar.setDisplayHomeAsUpEnabled(true);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_rayonmagasin);
-        ListView lv_listR = (ListView)findViewById(R.id.lv_rayons);
+        ListView lv_listR = (ListView)findViewById(R.id.lv_rayonsR);
         List<Rayon> lesRayons= Modele.getLesRayons();
         List<String> s_lesRayons=new ArrayList<>();
         for (int i=0;i< lesRayons.size();i++){
             s_lesRayons.add(Modele.getLeRayon(i).getLibelle());
         }
-        ArrayAdapter<String> lv_adapter = new ArrayAdapter<String>(this, R.layout.lv_rayons_element, s_lesRayons);
+        ArrayAdapter<String> lv_adapter = new ArrayAdapter<String>(this, R.layout.lv_rayonmagasin_element, s_lesRayons);
         lv_listR.setAdapter(lv_adapter);
         lv_listR.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override

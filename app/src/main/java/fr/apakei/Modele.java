@@ -37,6 +37,7 @@ public class    Modele {
     public static void init(){
         int num=Modele.addRayon("Tables","Tables de cuisine, tables basses...");
         Modele.getLeRayon(num).addProduit(new Produit("Fjallbo","Table basse",69.95,5.0,152,75,95, "noir"));
+        Modele.getLeRayon(num).addProduit(new Produit("Nordviken","Table extensible",299,15.0,152,75,95, "blanc"));
         Employe employeUn=new Employe("Jean","Baptiste","0612345678","jean.baptiste@gmail.com");
         Modele.getLeRayon(num).addEmploye(employeUn);
 

@@ -1,8 +1,11 @@
 package fr.apakei.produits;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -19,6 +22,8 @@ public class CaractProduitActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setDisplayHomeAsUpEnabled(true);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_caract_produit);
 
@@ -34,8 +39,17 @@ public class CaractProduitActivity extends AppCompatActivity {
         tv_prix=(TextView) findViewById(R.id.tv_detail_prix);
 
         tv_nomp.setText(prod.getNom());
-        tv_desc.setText(prod.getDescTech());
+        tv_desc.setText(prod.getDescTech()+", "+prod.getCouleur());
         tv_dim.setText("H"+prod.getHauteur()+"xL"+prod.getLongueur()+"xl"+prod.getLargeur());
         tv_prix.setText(prod.getPrix()+"€");
+    }
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                this.finish();
+                return true;
+        }
+        return super.onOptionsItemSelected(item);
     }
 }
