@@ -33,7 +33,7 @@ public class EmployeListActivity extends AppCompatActivity {
         for (int i=0;i< Modele.getLeRayon(positiona).getLesEmployes().size();i++){
             lesEmployees.add(Modele.getLeRayon(positiona).getEmploye(i).getNom()+" "+Modele.getLeRayon(positiona).getEmploye(i).getPrenom());
         }
-        ArrayAdapter<String> lv_adapter = new ArrayAdapter<String>(this, R.layout.lv_rayons_element, lesEmployees);
+        ArrayAdapter<String> lv_adapter = new ArrayAdapter<String>(this, R.layout.lv_rayonmagasin_element, lesEmployees);
         lv_list.setAdapter(lv_adapter);
         lv_list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
