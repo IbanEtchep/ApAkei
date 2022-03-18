@@ -1,9 +1,12 @@
 package fr.apakei.produits;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
@@ -17,21 +20,12 @@ public class ListRayonsActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setDisplayHomeAsUpEnabled(true);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list_rayons);
 
-        ListView lv_listR = (ListView)findViewById(R.id.lv_rayons);
-        /*List<Rayon> lesRayons= Modele.getLesRayons();
-        List<String> s_lesRayons=new ArrayList<>();
-
-
-        for (Rayon ray : lesRayons) {
-            s_lesRayons.add(ray.getLibelle());
-        }
-        ArrayAdapter<String> lv_adapter = new ArrayAdapter<String>(this, R.layout.lv_rayonmagasin_element, s_lesRayons);
-
-
-        lv_listP.setAdapter(lv_adapter);*/
+        ListView lv_listR = (ListView)findViewById(R.id.lv_rayonsR);
 
         RayonAdapter ra_rayons = new RayonAdapter(this, Modele.getLesRayons());
         lv_listR.setAdapter(ra_rayons);
@@ -54,5 +48,14 @@ public class ListRayonsActivity extends AppCompatActivity {
             }
         });
 
+    }
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                this.finish();
+                return true;
+        }
+        return super.onOptionsItemSelected(item);
     }
 }

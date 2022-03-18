@@ -1,5 +1,7 @@
 package fr.apakei;
 
+import android.media.Image;
+
 import java.util.ArrayList;
 
 public class Produit {
