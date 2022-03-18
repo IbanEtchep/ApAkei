@@ -3,17 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/flori/AndroidStudioProjects/ApAkei/app/src/main/res/layout/activity_employe.xml" value="0.17135416666666667" />
-        <entry key="..\:/Users/flori/AndroidStudioProjects/ApAkei/app/src/main/res/layout/activity_list_rayons.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/flori/AndroidStudioProjects/ApAkei/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/flori/AndroidStudioProjects/ApAkei/app/src/main/res/layout/activity_rayonmagasin.xml" value="0.264" />
-        <entry key="..\:/Users/flori/AndroidStudioProjects/ApAkei/app/src/main/res/layout/activity_vehicle_details.xml" value="0.17135416666666667" />
-        <entry key="..\:/Users/flori/AndroidStudioProjects/ApAkei/app/src/main/res/layout/lv_rayonmagasin_element.xml" value="0.1" />
-        <entry key="..\:/Users/flori/AndroidStudioProjects/ApAkei/app/src/main/res/layout/lv_rayons_element.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/activity_list_rayons.xml" value="0.35520833333333335" />
-        <entry key="app/src/main/res/layout/activity_location_list.xml" value="0.19739583333333333" />
+        <entry key="app/src/main/res/layout/activity_location_list.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.18177083333333333" />
-        <entry key="app/src/main/res/layout/activity_produits_rayon.xml" value="0.35520833333333335" />
+        <entry key="app/src/main/res/layout/activity_vehicle_details.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_vehicle_list.xml" value="0.19739583333333333" />
+        <entry key="app/src/main/res/layout/list_element.xml" value="0.19739583333333333" />
+        <entry key="app/src/main/res/layout/magasin_element_layout.xml" value="0.35520833333333335" />
+        <entry key="app/src/main/res/layout/vehicle_element.xml" value="0.1" />
       </map>
     </option>
   </component>

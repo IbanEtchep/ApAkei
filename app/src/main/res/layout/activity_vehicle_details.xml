@@ -8,57 +8,138 @@
     tools:context=".locations.VehicleDetailsActivity">
 
     <TextView
+        android:id="@+id/tv_label_nom_vehicule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/nomLabel"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <TextView
         android:id="@+id/tv_nom_vehicule"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/nomLabel" />
+        android:text=""
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#595959" />
+
+    <TextView
+        android:id="@+id/tv_label_marque_vehicule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/marqueLabel"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
     <TextView
         android:id="@+id/tv_marque_vehicule"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/marqueLabel" />
+        android:text=""
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#595959" />
+
+    <TextView
+        android:id="@+id/tv_label_carburant_vehicule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/carburantLabel"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
     <TextView
         android:id="@+id/tv_carburant_vehicule"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/carburantLabel" />
+        android:text=""
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#595959" />
+
+    <TextView
+        android:id="@+id/tv_label_kilometrage_vehicule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/kilometrage"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
     <TextView
         android:id="@+id/tv_kilometrage_vehicule"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/kilometrage" />
+        android:text=""
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#595959" />
+
+    <TextView
+        android:id="@+id/tv_label_immatriculation_vehicule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/immatriculationLabel"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
     <TextView
         android:id="@+id/tv_immatriculation_vehicule"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/immatriculationLabel" />
+        android:text=""
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#595959" />
+
+    <TextView
+        android:id="@+id/tv_label_longueur_vehicule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/longueurLabel"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
     <TextView
         android:id="@+id/tv_longueur_vehicule"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/longueurLabel" />
+        android:text=""
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#595959" />
+
+    <TextView
+        android:id="@+id/tv_label_largeur_vehicule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/largeurLabel"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
     <TextView
         android:id="@+id/tv_largeur_vehicule"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/largeurLabel" />
+        android:text=""
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#595959" />
+
+    <TextView
+        android:id="@+id/tv_label_hauteur_vehicule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/hauteurLabel"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
     <TextView
         android:id="@+id/tv_hauteur_vehicule"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/hauteurLabel" />
+        android:text=""
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#595959" />
+
+    <TextView
+        android:id="@+id/tv_label_volume_vehicule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/volumeLabel"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
     <TextView
         android:id="@+id/tv_volume_vehicule"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/volumeLabel" />
+        android:text=""
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#595959" />
 
 </LinearLayout>
