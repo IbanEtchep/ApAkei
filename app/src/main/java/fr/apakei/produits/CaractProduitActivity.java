@@ -32,6 +32,7 @@ public class CaractProduitActivity extends AppCompatActivity {
         int idRay=bundleRecu.getInt("ray");
 
         Produit prod=Modele.getLeRayon(idRay).getProduit(idProd);
+        setTitle(prod.getNom());
 
         tv_nomp=(TextView) findViewById(R.id.tv_detail_nomP);
         tv_desc=(TextView) findViewById(R.id.tv_detail_desc);

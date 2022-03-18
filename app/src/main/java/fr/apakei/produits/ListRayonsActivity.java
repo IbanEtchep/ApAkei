@@ -24,7 +24,7 @@ public class ListRayonsActivity extends AppCompatActivity {
         actionBar.setDisplayHomeAsUpEnabled(true);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list_rayons);
-
+        setTitle("Choisissez un rayon");
         ListView lv_listR = (ListView)findViewById(R.id.lv_rayonsR);
 
         RayonAdapter ra_rayons = new RayonAdapter(this, Modele.getLesRayons());

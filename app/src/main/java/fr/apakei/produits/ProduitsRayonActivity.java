@@ -30,6 +30,7 @@ public class ProduitsRayonActivity extends AppCompatActivity {
 
         Bundle bundleRecu = this.getIntent().getExtras();
         int idRay=bundleRecu.getInt("ray");
+        setTitle("Choisissez un produit");
 
         TextView tv_nomR=(TextView) findViewById(R.id.tv_nomR);
         tv_nomR.setText("Rayon "+Modele.getLeRayon(idRay).getLibelle());
