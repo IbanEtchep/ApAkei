@@ -51,7 +51,7 @@ public class MagasinAdapter extends BaseAdapter {
                 convertView.findViewById(R.id.tv_adresse_magasin);
 
         nameTextView.setText(magasin.getNom());
-        addressTextView.setText(magasin.getAdresse());
+        addressTextView.setText(magasin.getAdresse() + " " + magasin.getCp() + " " + magasin.getVille());
 
         return convertView;
     }

@@ -51,6 +51,12 @@ public class    Modele {
         int numm=Modele.addMagasin("Akei Pays basque", "2-4 Av. du Portou", "64990", "Saint-Pierre-d'Irube");
         Modele.getLeMagasin(numm).addEmploye(employeUn);
         Modele.getLeMagasin(numm).addVehicule(new Vehicule("Ducato", 2670,1870,1662,"AF-512-FM", "Essence",32000,20,"Fiat"));
+        Modele.getLeMagasin(numm).addVehicule(new Vehicule("Partner", 2670,1870,1662,"EU-325-VS", "Diesel",3000,20,"Peugeot"));
+        Modele.getLeMagasin(numm).addVehicule(new Vehicule("Zoe", 2370,450,1662,"DF-598-ES", "Electric",32000,20,"Renault"));
+
+        int nummm=Modele.addMagasin("Akei Bordeaux", "avenue des 40 Journaux", "33300", "Bordeaux");
+        Modele.getLeMagasin(nummm).addEmploye(employeUn);
+        Modele.getLeMagasin(nummm).addVehicule(new Vehicule("Ducato", 2670,1870,1662,"AF-512-FM", "Essence",15300,20,"Fiat"));
     }
 
 }

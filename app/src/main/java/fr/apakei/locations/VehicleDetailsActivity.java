@@ -5,6 +5,7 @@ import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.MenuItem;
 import android.widget.TextView;
 
@@ -37,7 +38,8 @@ public class VehicleDetailsActivity extends AppCompatActivity {
         }
         Bundle bundleReceived = this.getIntent().getExtras();
         int magasinIndex = bundleReceived.getInt("magasinIndex");
-        int vehiculeIndex = bundleReceived.getInt("vehiculeIndex");
+        int vehiculeIndex = bundleReceived.getInt("vehicleIndex");
+        Log.d("index", magasinIndex + " " + vehiculeIndex);
         Magasin magasin = Modele.getLesMagasins().get(magasinIndex);
         Vehicule vehicule = magasin.getVehicule(vehiculeIndex);
 
