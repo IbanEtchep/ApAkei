@@ -33,7 +33,7 @@ public class RayonMagasinActivity extends AppCompatActivity {
         for (int i=0;i< lesRayons.size();i++){
             s_lesRayons.add(Modele.getLeRayon(i).getLibelle());
         }
-        ArrayAdapter<String> lv_adapter = new ArrayAdapter<String>(this, R.layout.lv_rayons_element, s_lesRayons);
+        ArrayAdapter<String> lv_adapter = new ArrayAdapter<String>(this, R.layout.lv_rayonmagasin_element, s_lesRayons);
         lv_listR.setAdapter(lv_adapter);
         lv_listR.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
