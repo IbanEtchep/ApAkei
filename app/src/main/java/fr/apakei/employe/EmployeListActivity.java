@@ -2,6 +2,7 @@ package fr.apakei.employe;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
@@ -28,7 +29,7 @@ public class EmployeListActivity extends AppCompatActivity {
         setContentView(R.layout.activity_employe_list);
         ListView lv_list = (ListView)findViewById(R.id.lv_rayonsR);
         Bundle bundleRecu = this.getIntent().getExtras();
-        int positiona= (int) bundleRecu.getFloat("positionrayon");
+        int positiona= bundleRecu.getInt("positionrayon");
         List<String> lesEmployees=new ArrayList<>();
         for (int i=0;i< Modele.getLeRayon(positiona).getLesEmployes().size();i++){
             lesEmployees.add(Modele.getLeRayon(positiona).getEmploye(i).getNom()+" "+Modele.getLeRayon(positiona).getEmploye(i).getPrenom());

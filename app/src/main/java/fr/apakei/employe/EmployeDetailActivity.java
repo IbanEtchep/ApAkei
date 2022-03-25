@@ -5,6 +5,7 @@ import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.MenuItem;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
@@ -30,8 +31,8 @@ public class EmployeDetailActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_employe_detail);
         Bundle bundleRecu = this.getIntent().getExtras();
-        int positionemploye= (int) bundleRecu.getFloat("positionemploye");
-        int positionrayon= (int) bundleRecu.getFloat("positionrayon");
+        int positionemploye= (int) bundleRecu.getInt("positionemploye");
+        int positionrayon= (int) bundleRecu.getInt("positionrayon");
         nom = (TextView) findViewById(R.id.tv_nom);
         prenom=(TextView) findViewById(R.id.tv_prenom);
         tel=(TextView) findViewById(R.id.tv_tel);
