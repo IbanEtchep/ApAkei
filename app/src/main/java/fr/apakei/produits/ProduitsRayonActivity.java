@@ -23,7 +23,9 @@ public class ProduitsRayonActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        // calling the action bar
         ActionBar actionBar = getSupportActionBar();
+        // showing the back button in action bar
         actionBar.setDisplayHomeAsUpEnabled(true);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_produits_rayon);
@@ -60,6 +62,9 @@ public class ProduitsRayonActivity extends AppCompatActivity {
         });
 
     }
+
+    // this event will enable the back
+    // function to the button on press
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()) {

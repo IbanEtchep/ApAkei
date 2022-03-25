@@ -20,7 +20,9 @@ public class ListRayonsActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        // calling the action bar
         ActionBar actionBar = getSupportActionBar();
+        // showing the back button in action bar
         actionBar.setDisplayHomeAsUpEnabled(true);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list_rayons);
@@ -32,7 +34,6 @@ public class ListRayonsActivity extends AppCompatActivity {
 
         // When the user clicks on the ListItem
         lv_listR.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-
             @Override
             public void onItemClick(AdapterView<?> a, View v, int position, long id) {
                 Object o = lv_listR.getItemAtPosition(position);
@@ -49,6 +50,9 @@ public class ListRayonsActivity extends AppCompatActivity {
         });
 
     }
+
+    // this event will enable the back
+    // function to the button on press
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()) {

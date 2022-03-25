@@ -22,15 +22,19 @@ public class CaractProduitActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        // calling the action bar
         ActionBar actionBar = getSupportActionBar();
+        // showing the back button in action bar
         actionBar.setDisplayHomeAsUpEnabled(true);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_caract_produit);
 
+        //Récupération de l'id du produit et du rayon sélectionnés précedemment
         Bundle bundleRecu = this.getIntent().getExtras();
         int idProd=bundleRecu.getInt("prod");
         int idRay=bundleRecu.getInt("ray");
 
+        //Récupération du produit sélectionné selon son id et l'id du rayon
         Produit prod=Modele.getLeRayon(idRay).getProduit(idProd);
         setTitle(prod.getNom());
 
@@ -44,6 +48,9 @@ public class CaractProduitActivity extends AppCompatActivity {
         tv_dim.setText("H"+prod.getHauteur()+"xL"+prod.getLongueur()+"xl"+prod.getLargeur());
         tv_prix.setText(prod.getPrix()+"€");
     }
+
+    // this event will enable the back
+    // function to the button on press
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()) {
